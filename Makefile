@@ -2,11 +2,11 @@
 SCRIPT := synonym
 
 install:
-	cp $(SCRIPT) /usr/local/bin/$(SCRIPT)
-	chmod 755 /usr/local/bin/$(SCRIPT)
+	cp $(SCRIPT) ${HOME}/.local/bin/$(SCRIPT)
+	chmod 755 ${HOME}/.local/bin/$(SCRIPT)
 
 uninstall:
-	rm -f /usr/local/bin/$(SCRIPT)
+	rm -f ${HOME}/.local/bin/$(SCRIPT)
 
 linter:
 	shellcheck ./$(SCRIPT)
